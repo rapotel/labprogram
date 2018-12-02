@@ -1,0 +1,58 @@
+4.xml
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<?xml-stylesheet type="text/css" href="4.css"?>
+<CATALOG> 
+<STUDENT> 
+<NAME>Anurag</NAME> 
+<SRN>R14CS001</SRN> 
+<BRANCH>CSE</BRANCH> 
+<SEMESTER>3</SEMESTER> 
+<UNIVERSITY>REVA</UNIVERSITY> 
+<COUNTRY >India</COUNTRY> 
+</STUDENT> 
+<STUDENT> 
+<NAME>Arjun</NAME> 
+<SRN>R14CS021</SRN> 
+<BRANCH>CSE</BRANCH> 
+<SEMESTER>5</SEMESTER> 
+<UNIVERSITY> REVA </UNIVERSITY> 
+<COUNTRY> India </COUNTRY> 
+</STUDENT>
+<STUDENT> 
+<NAME>William</NAME> 
+<SRN>R14CS099</SRN> 
+<BRANCH>CSE</BRANCH> 
+<SEMESTER>7</SEMESTER> 
+<UNIVERSITY> REVA </UNIVERSITY> 
+<COUNTRY> India </COUNTRY> 
+</STUDENT> 
+</CATALOG>
+
+4.css
+CATALOG 
+{ 
+background-color: #ffffff; 
+width: 100%; 
+} 
+STUDENT
+{ 
+display: block; 
+margin-bottom: 30pt; 
+margin-left: 0; 
+} 
+NAME
+{ 
+color: #FF0000; 
+font-size: 20pt; 
+} 
+SRN
+{ 
+color: #0000FF; 
+font-size: 20pt; 
+} 
+BRANCH,SEMESTER,UNIVERSITY,COUNTRY 
+{ 
+display: block; 
+color: #000000; 
+margin-left: 20pt; 
+}

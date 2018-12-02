@@ -1,0 +1,45 @@
+7.html
+<html>
+<head><title>Unix Command</title></head>
+<body>
+<form method=GET action="http://localhost/cgi-bin/7a.pl" >
+<center><br><h1>ENTER UNIX COMMAND TO BE EXECUTED</h1>
+<input type="text" name="msg">
+<input type="submit" value="CLICKME">
+</form> 
+</body> 
+</html>
+
+7a.pl
+#!/usr/bin/perl
+use CGI':standard';
+print "con tent-type:text/html\n\n"; 	
+$c=param('msg');
+system($c); 
+exit(0); 
+
+7b.pl
+#!/usr/bin/perl 
+print "content-type:text/html ";
+$count_file="/var/www/cgi-bin/ru.txt";
+if(open(FILE,'<'.$count_file))
+{
+		$no_accesses=<FILE>;
+		close(FILE);
+		if(open(FILE,'>'.$count_file))
+		{
+			$no_accesses++;
+			print FILE $no_accesses;
+			close(FILE);
+			print "no. of visitors:",$no_accesses;
+		}
+		else
+		{
+			print "[can't write to data file]";
+}
+}
+else
+{
+		print "[sorry]";
+}
+exit(0);
